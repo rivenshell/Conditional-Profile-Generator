@@ -41,10 +41,13 @@ function render(variables = {}) {
     window.variables.role = "";
   }
 
-  let c =
-    window.variables.lastname != "null"
-      ? (window.variables.lastname = "")
-      : (window.variables.lastname = "");
+  if (window.variables.role == null) {
+    window.variables.role = "";
+  }
+  window.variables.lastname == null ? "" : console.log("we are good");
+
+  window.variables.city == null ? "" : console.log("");
+
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
