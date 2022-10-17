@@ -41,12 +41,20 @@ function render(variables = {}) {
     window.variables.role = "";
   }
 
-  if (window.variables.role == null) {
-    window.variables.role = "";
+  if (window.variables.lastname == null) {
+    window.variables.lastname = "";
+  }
+
+  if (window.variables.city == null) {
+    window.variables.city = "";
+  }
+
+  if (window.variables.country == null) {
+    window.variables.country = "";
   }
   window.variables.lastname == null ? "" : console.log("we are good");
 
-  window.variables.city == null ? "" : console.log("");
+  window.variables.city == null ? "" : console.log("are we good?");
 
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
