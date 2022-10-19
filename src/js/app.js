@@ -33,6 +33,7 @@ function render(variables = {}) {
   }
 */
 
+  // a shorter version exists
   if (window.variables.name == null) {
     window.variables.name = "";
   }
