@@ -57,6 +57,7 @@ function render(variables = {}) {
 
   window.variables.city == null ? "" : console.log("are we good?");
 
+  // do something
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
